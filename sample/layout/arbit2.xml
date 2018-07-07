@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/ui__spacing_unit_2x"
+    android:orientation="vertical">
+  <EditText
+      android:id="@+id/ub__lite_bug_report_title"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:inputType="textCapSentences|textAutoCorrect"
+      android:maxLines="1"
+      android:singleLine="true"
+      android:hint="@string/ub__lite_bug_title"/>
+  <EditText
+      android:id="@+id/ub__lite_bug_report_description"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/ui__spacing_unit_2x"
+      android:inputType="textCapSentences|textAutoCorrect"
+      android:hint="@string/ub__lite_bug_description"
+  />
+  <CheckBox
+      android:id="@+id/ub__lite_bug_report_screenshot"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/ui__spacing_unit_2x"
+      android:background="?android:attr/selectableItemBackground"
+      android:textSize="@dimen/foundation_ui__text_size_subtitle"
+      tools:checked="true"
+      android:text="@string/ub__lite_bug_include_screenshot"
+  />
+</LinearLayout>
